@@ -1,0 +1,174 @@
+
+/* Transition
+-------------------------- */
+@all-transition: all .3s cubic-bezier(.645,.045,.355,1) ;
+@fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) ;
+@fade-linear-transition: opacity 200ms linear ;
+@md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms ;
+@border-transition-base: border-color .2s cubic-bezier(.645,.045,.355,1) ;
+@color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) ;
+
+/* Colors
+-------------------------- */
+@color-white: #fff ;
+@color-black: #000 ;
+
+@color-primary: #409EFF ;
+@color-primary-light-1: mix(@color-white, @color-primary, 10%) ; /* 53a8ff */
+@color-primary-light-2: mix(@color-white, @color-primary, 20%) ; /* 66b1ff */
+@color-primary-light-3: mix(@color-white, @color-primary, 30%) ; /* 79bbff */
+@color-primary-light-4: mix(@color-white, @color-primary, 40%) ; /* 8cc5ff */
+@color-primary-light-5: mix(@color-white, @color-primary, 50%) ; /* a0cfff */
+@color-primary-light-6: mix(@color-white, @color-primary, 60%) ; /* b3d8ff */
+@color-primary-light-7: mix(@color-white, @color-primary, 70%) ; /* c6e2ff */
+@color-primary-light-8: mix(@color-white, @color-primary, 80%) ; /* d9ecff */
+@color-primary-light-9: mix(@color-white, @color-primary, 90%) ; /* ecf5ff */
+
+@color-success: #67c23a ;
+@color-warning: #eb9e05 ;
+@color-danger: #fa5555 ;
+@color-info: #878d99 ;
+
+@color-success-light: mix(@color-white, @color-success, 80%) ;
+@color-warning-light: mix(@color-white, @color-warning, 80%) ;
+@color-danger-light: mix(@color-white, @color-danger, 80%) ;
+@color-info-light: mix(@color-white, @color-info, 80%) ;
+
+@color-success-lighter: mix(@color-white, @color-success, 90%) ;
+@color-warning-lighter: mix(@color-white, @color-warning, 90%) ;
+@color-danger-lighter: mix(@color-white, @color-danger, 90%) ;
+@color-info-lighter: mix(@color-white, @color-info, 90%) ;
+
+@color-text-primary: #2d2f33 ;
+@color-text-regular: #5a5e66 ;
+@color-text-secondary: #878d99 ;
+@color-text-placeholder: #b4bccc ;
+
+/* Link
+-------------------------- */
+@link-color: @color-primary-light-2 ;
+@link-hover-color: @color-primary ;
+
+/* Background
+-------------------------- */
+@background-color-base: #f5f7fa ;
+
+/* Border
+-------------------------- */
+@border-width-base: 1px ;
+@border-style-base: solid ;
+@border-color-base: #d8dce5 ;
+@border-color-light: #dfe4ed ;
+@border-color-lighter: #e6ebf5 ;
+@border-color-extra-light: #edf2fc ;
+@border-color-hover: @color-text-placeholder ;
+@border-base: @border-width-base @border-style-base @border-color-base ;
+@border-radius-base: 4px ;
+@border-radius-small: 2px ;
+@border-radius-circle: 100% ;
+
+/* Box-shadow
+-------------------------- */
+@box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04) ;
+@box-shadow-dark: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12) ;
+@box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1) ;
+
+/* Fill
+-------------------------- */
+@fill-base: @color-white ;
+
+/* Font
+-------------------------- */
+@font-path: 'fonts' ;
+@font-size-base: 14px ;
+@font-size-small: 13px ;
+@font-size-large: 18px ;
+@font-color-disabled-base: #bbb ;
+@font-weight-primary: 500 ;
+@font-line-height-primary: 24px ;
+
+/* Size
+-------------------------- */
+@size-base: 14px ;
+
+/* z-index
+-------------------------- */
+@index-normal: 1 ;
+@index-top: 1000 ;
+@index-popper: 2000 ;
+
+/* Disable base
+-------------------------- */
+@disabled-fill-base: @background-color-base ;
+@disabled-color-base: @color-text-placeholder ;
+@disabled-border-base: @border-color-light ;
+
+/* Icon
+-------------------------- */
+@icon-color: #666 ;
+@icon-color-base: @color-info ;
+
+/* Header
+  --------------------------*/
+@header-padding: 0 20px ;
+
+/* Footer
+--------------------------*/
+@footer-padding: 0 20px ;
+
+/* Main
+--------------------------*/
+@main-padding: 20px ;
+
+
+/* 左侧 aside
+--------------------------*/
+@aside-background-color:#001529;
+@aside-submenu-background-color:#000c17;
+@aside-logo-height:64px;
+@aside-logo-backgroud-color:#002140;
+
+
+/* 右侧 content的头部菜单
+------------------------ */
+@content-header-height:@aside-logo-height;
+
+
+/* 面包屑
+----------------------- */
+@breamcrumb-height:34px;
+
+/* h5页面规范
+--------------------*/
+@color-white: #fff ;
+@color-black: #000 ;
+@color-brand: #ffbd11;/*品牌色*/
+@color-yellow: #ffbd11;
+@color-background: #f1f3f6;/*背景色*/
+@color-line: #e0e0e0;/*分隔线*/
+@color-assist-gray: #cccccc; /*辅色*/
+@color-assist-green: #4cd762; /*辅色*/
+@color-level-1: #404040;/*一级栏目*/
+@color-level-2: #707070;/*二级栏目*/
+@color-reminder: #ccc; /*提示文字*/
+@color-warning: #ffbd11;/*警告色*/
+@color-reminder-click: #4cd762;/*可点击提示文字*/
+@color-button-text: @color-white;/*按钮文字*/
+
+/*字体大小*/
+@font-level-1: 0.4rem;/*一级栏目*/
+@font-level-2: 0.46rem;/*二级栏目*/
+@font-main: 0.4rem;/*主要字号*/
+@font-main-1: 0.34rem;/*主要字号1*/
+@font-tag: 0.34rem;/*标签字号*/
+@font-red-point: 0.3rem;/*红点上数字*/
+
+/*间距*/
+@space-most-big: 0.8rem; /*特大间距---蓝色*/
+@space-distinguish: 0.6rem; /*区分间距---紫色*/
+@space-general: 0.48rem; /*一般间距---粉色*/
+@space-near: 0.36rem; /*亲密间距---黄色*/
+@space-super-near: 0.12rem; /*特密间距---绿色*/
+
+
+
